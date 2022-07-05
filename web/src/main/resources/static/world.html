@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>疫情吹哨系统</title>
+    <script type="text/javascript" src="js/jquery.js"></script>
+
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/world.js"></script>
+    <script type="text/javascript" src="js/themes/macarons.js"></script>
+    <script type="text/javascript" src="js/themes/roma.js"></script>
+    <script type="text/javascript" src="js/themes/walden.js"></script>
+    <script type="text/javascript" src="js/themes/westeros.js"></script>
+    <link rel="stylesheet" href="css/flexCSS.css"/>
+</head>
+<body>
+<div id="righttitle">
+
+    <button class="b1"><a id="aworld" href="http://localhost:8088/" target="_self">切换到国内疫情</a></button>
+</div>
+<div id="gyroContain">
+    <div id="title">国外疫情可视化分析</div>
+
+
+    <div id="leftinfomap2">
+        <div id="time"></div>
+        <div id="left1number2">
+            <div class="num2">
+                <div class="numone2">较昨日<span class="xianyouquezhen2"></span></div>
+                <div class="numtwo2 xianyouquezhen2"></div>
+                <div class="numthree2 txt2">现有确诊</div>
+            </div>
+            <div class="num2">
+                <div class="numone2">较昨日<span class="leijiquezhen2"></span></div>
+                <div class="numtwo2 leijiquezhen2"></div>
+                <div class="numthree2 txt2">累计确诊</div>
+            </div>
+            <div class="num2">
+                <div class="numone2">较昨日<span class="leijizhiyu2"></span></div>
+                <div class="numtwo2 leijizhiyu2"></div>
+                <div class="numthree2 txt2">累计治愈</div>
+            </div>
+            <div class="num2">
+                <div class="numone2">较昨日<span class="leijisiwang2"></span></div>
+                <div class="numtwo2 leijisiwang2"></div>
+                <div class="numthree2 txt2">累计死亡</div>
+            </div>
+        </div>
+        <div id="worldMapNoChina"></div>
+    </div>
+    <div id="bottomchart0">
+        <div id="globalCumulativeTrend"></div>
+        <div id="theNumberOfForeignCountriesWithConfirmedCases"></div>
+        <div id="foreignCumulativeDiagnosisTop10Countries"></div>
+
+        <div id="overseasCountriesWithMoreThan10000HaveBeenConfirmedCases"></div>
+
+    </div>
+</div>
+<script src="js/global/ec_worldMapNoChina.js"></script>
+<script src="js/global/ec_globalCumulativeTrend.js"></script>
+
+<script src="js/global/ec_foreignCumulativeDiagnosisTop10Countries.js"></script>
+
+
+<script src="js/global/ec_overseasCountriesWithMoreThan10000HaveBeenConfirmedCases.js"></script>
+
+<script src="js/global/ec_theNumberOfForeignCountriesWithConfirmedCases.js"></script>
+<script src="js/global/worldController.js"></script>
+</body>
+</html>
